@@ -7,7 +7,7 @@
          <slot> 
 
          </slot>
-         <span class="btn__span">+</span>
+         <img class="btn__img" src="../assets/images/icons/button.svg" alt="">
       </button>
   
 </template>
@@ -39,7 +39,7 @@
       &:hover{
          box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
-      &__span{         
+      &__img{         
          padding-left: 10px;
       }
       &_white{

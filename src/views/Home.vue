@@ -4,8 +4,9 @@
       <Container>      
         <div class="garden__row">
           <div class="garden__left">          
-            <LineText variant="green">Make a garden with musion.</LineText>          
-            <p class="garden__title white">If you have a garden and a library, you have everything you need.</p>
+            <LineText variant="green">Make a garden with musion.</LineText>    
+            <Title class="garden__title">If you have a garden and a library, you have everything you need.</Title>      
+            
             <LineText variant="green">Marcus Tullius Cicero</LineText>
             <Button class="garden__btn">All Services</Button>
           </div>
@@ -15,18 +16,26 @@
         </div>   
       </Container>
     </div>
-    <div>
+    <div class="about">
       <Container>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda similique blanditiis voluptate inventore repellendus officia molestias! Illo, qui! Alias aliquam quisquam minima impedit illo sint voluptas nulla repellendus? Nemo?
-        Veritatis, est ipsa iste dolore nulla quos, tenetur optio reiciendis consequuntur suscipit at accusantium in ipsam quo, praesentium quia perspiciatis? Provident quos aliquam voluptates nihil cupiditate dolore ut quasi quidem.
-        Ullam cum officia recusandae est odio fugiat mollitia nobis qui deserunt distinctio alias, laudantium animi nisi nemo optio laborum corrupti sunt saepe tenetur modi ipsa enim at. Suscipit, vitae ducimus!
-        Itaque animi temporibus velit consequuntur accusantium. Suscipit quis ab incidunt nostrum dignissimos in rem obcaecati aspernatur. Velit pariatur sed nobis ut molestias eligendi corporis eos incidunt suscipit, minima quasi deleniti?
-        Veniam corporis odio sunt est porro nulla ab voluptatibus! Provident veniam magnam, consectetur, quia quasi autem alias aperiam eum ipsa impedit facilis distinctio iure? Laudantium quae cupiditate error accusantium facilis?
-        Pariatur debitis ex odit! Quisquam mollitia quidem velit. Similique impedit, dignissimos aliquam aut veniam sit quam modi excepturi fugiat tempore distinctio consectetur molestiae, quisquam, ex itaque nemo eaque nostrum accusantium.
-        Nobis a quibusdam non. Minima corrupti itaque repellat hic excepturi cupiditate quibusdam, culpa architecto vero at sequi eius tempora quo ratione dicta ad harum obcaecati optio praesentium nam, consequatur iste.
-        Ipsum praesentium tempore incidunt est quibusdam tempora cupiditate animi sit harum facilis, aliquid architecto consequatur? Aliquam fuga in optio provident ab molestiae, minus voluptates quisquam nemo porro, maxime doloribus ipsa.
-        Molestiae veniam possimus sed quaerat est itaque officia? Laudantium, deleniti odit sint consequuntur natus asperiores nam qui quo enim eius dolore fugit illum nobis iste dolor repudiandae corrupti rerum tenetur!
-        Quisquam eius ea fugit adipisci dolore quis officia consequuntur. Temporibus illo dolorum, alias saepe incidunt delectus quibusdam officiis voluptate perspiciatis quasi placeat molestiae quas ab iure eum sapiente sit possimus.
+          <div class="about__title">
+            <LineText class="about__lineText">About Company</LineText> 
+            <Title>Farmzi have 35 years of experience and know smart way to grow and design your beautiful garden.</Title>  
+          </div>
+          <div class="about__row">
+            <div class="about__left">
+              <img src="../assets/images/about.jpg" alt="">
+            </div>
+            <div class="about__right">
+              <div class="about__subtitle">Who we are?</div>
+              <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dumm ever since the 1500s, when an unknown printer took a galley scrambled it make a type specimen book.</p>
+              <p class="about__quote">“Lorem Ipsum is simply dummy text of the printn industry lorem epsum has been the industry and scrambled it make a type specimen book”.</p>
+              <div class="about__subtitle">Mission and vision</div>
+              <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dumm ever since the 1500s, when an unknown printer took a galley scrambled it make a type specimen book.</p>
+              <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dumm scrambled it make a type specimen book.</p>
+              <Button class="about__btn">Learn More</Button>
+            </div>
+          </div>
       </Container>
     </div>
   </div> 
@@ -38,13 +47,15 @@
 import Container from '@/components/Container.vue'
 import Button from '@/components/Button.vue'
 import LineText from '@/components/LineText.vue'
+import Title from '../components/Title.vue';
 export default {
   name: 'Home',
-  components: {    
+  components: {
     Container,
     Button,
-    LineText
-  },
+    LineText,
+    Title
+},
   
 }
 </script>
@@ -55,34 +66,72 @@ export default {
   .garden {
     background-color: $primary;
     max-height: 788px;
-    padding: 100px 0;
+    
     
 
     &__row{      
       display: flex;
       
     }
-    &__left {
-      padding: 0 15px;
-      
-    }
-
-    &__title {
-      
+    
+    &__title {      
       font-size: 60px;
-      font-family: 'Playfair Display', serif;
-      font-weight: normal;
-      margin: 0;
+      color: $white;
+      margin: 19px 0 16px 0 ;
       padding: 0 95px 0 0;  
        
     }
-
-    &__right {
+    
+    &__right img{
       margin-top: -44px;
     }
     &__btn{
       margin-top: 60px;
     }
   }
+
+
+
+.about {
+  padding-top: 115px;
+
+  &__title {
+    padding-right: 143px;
+    
+  }
+
+  &__row {
+    display: flex;
+  }
+
+
+  &__right {
+    padding: 73px 0 73px 120px ;
+  }
+  &__subtitle,
+  &__quote{
+    font-family: 'Playfair Display', serif;    
+    color: $primary;
+  }
+  &__subtitle {
+    font-size: 32px;   
+    
+  }
+
+  &__text {
+    color:$grey;
+    line-height: 26px;
+    margin: 26px 0 15px 0;
+  }
+
+  &__quote {
+    font-size: 22px;
+    margin-bottom: 36px;
+  }
+
+  &__btn {
+    margin-top: 75px;
+  }
+}
 
 </style>

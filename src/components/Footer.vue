@@ -1,6 +1,5 @@
 <template>
    <div class="footer">
-      <div class="footer__info">
          <container>    
             <div class="footer__row ">
                <div class="footer__col white">
@@ -42,7 +41,6 @@
             </div>          
                    
          </container> 
-      </div>
 
 
       <div class="footer__foot">

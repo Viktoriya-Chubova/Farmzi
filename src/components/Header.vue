@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
-    <container>
-      <div class="navbar__nav">
+    
+      
         <div class="navbar__logo">
           <img class="navbar__img" src="../assets/images/logo/logo.png" alt="" />
         </div>
@@ -12,18 +12,18 @@
           
         </ul>
         <Contacts class="navbar__contact"/>
-      </div>
-    </container>
+      
+    
   </div>
 </template>
 
 <script>
-import Container from "@/components/Container.vue";
+
 import Contacts from "./Contacts.vue";
 export default {
   name: "Header",
   components: {
-    Container,
+    
     Contacts
 },
 data(){
@@ -46,12 +46,10 @@ data(){
 .navbar {
   height: 107px;
   background-color: $primary;
-  
+  display: flex;    
+    padding: 29px 60px;
 
-  &__nav {
-    display: flex;    
-    padding: 29px 0;
-  }
+
 
   &__logo {
     margin-right: 236px;
