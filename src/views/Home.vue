@@ -61,6 +61,15 @@
         </div>
       </Container>
     </div>
+    <div class="team">
+      <container>
+        <div class="team__title">
+          <LineText class="team__lineText">Team Members</LineText> 
+          <Title>Farmzi feel proud for skilled team members.</Title>  
+        </div>
+        <CardsTeam :data="TeamData" class="team__cards"></CardsTeam>
+      </container>
+    </div>
   </div> 
 </template>
 
@@ -71,9 +80,10 @@ import Container from '@/components/Container.vue'
 import Button from '@/components/Button.vue'
 import LineText from '@/components/LineText.vue'
 import Title from '../components/Title.vue';
-import {ServicesData} from '../data/data.services'
+import {ServicesData, TeamData} from '../data/data.dummy'
 import CardsServices from '../components/CardsServices.vue'
 import Contacts from '../components/Contacts.vue';
+import CardsTeam from '../components/CardsTeam.vue';
 export default {
   name: 'Home',
   components: {
@@ -82,11 +92,14 @@ export default {
     LineText,
     Title,
     CardsServices,
-    Contacts
+    Contacts,
+    CardsTeam
 },
   data(){
     return{
-      ServicesData: ServicesData
+      ServicesData: ServicesData,
+      TeamData: TeamData
+
     }
   },
   

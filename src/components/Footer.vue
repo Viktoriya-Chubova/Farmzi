@@ -12,23 +12,18 @@
                   </div>
                   <Contacts/>
                </div>
-            </div>          
-                   
+            </div>                          
          </container> 
-         
       <div class="footer__foot">
             <p> &copy; 2022 design and developed by <a href="#">Brandbes</a>. Powered by <a href="#">Webflow</a>.</p>
          </div> 
    </div>
 </template>
-
-
-
 <script>
 import Container from "@/components/Container.vue";
 import Contacts from "./Contacts.vue";
 import FooterNav from "./FooterNav.vue";
-import {FooterNavData} from '../data/data.footer'
+import {FooterNavData} from '../data/data.dummy'
 export default {
    name: "Footer",
    components: {
