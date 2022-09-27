@@ -20,6 +20,7 @@
 <script>
 
 import Contacts from "./Contacts.vue";
+
 export default {
   name: "Header",
   components: {
@@ -29,11 +30,11 @@ export default {
 data(){
     return {
       headerMenuList:[
-        {name: 'Home', path: '/'},
-        {name: 'About', path: '/about'},
-        {name: 'Pages', path: '#'},
-        {name: 'Blog', path: '#'},
-        {name: 'Contact', path: '#'},
+        {id: 1, name: 'Home', path: '/'},
+        {id: 2, name: 'About', path: '/about'},
+        {id: 3, name: 'Pages', path: '#'},
+        {id: 4, name: 'Blog', path: '#'},
+        {id: 5, name: 'Contact', path: '#'},
    
       ]
     }

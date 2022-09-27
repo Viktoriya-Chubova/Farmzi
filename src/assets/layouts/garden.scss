@@ -1,0 +1,25 @@
+.garden {
+   background-color: $primary;
+   max-height: 788px;
+   
+
+   &__row{      
+     display: flex;
+     
+   }
+   
+   &__title {      
+     font-size: 60px;
+     color: $white;
+     margin: 19px 0 16px 0 ;
+     padding: 0 95px 0 0;  
+      
+   }
+   
+   &__right img{
+     margin-top: -44px;
+   }
+   &__btn{
+     margin-top: 60px;
+   }
+ }

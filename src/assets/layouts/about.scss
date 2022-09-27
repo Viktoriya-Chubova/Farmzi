@@ -1,0 +1,41 @@
+.about {
+   padding-top: 115px;
+ 
+   &__title {
+     padding-right: 143px;
+     
+   }
+ 
+   &__row {
+     display: flex;
+   }
+ 
+ 
+   &__right {
+     padding: 73px 0 73px 120px ;
+   }
+   &__subtitle,
+   &__quote{
+     font-family: 'Playfair Display', serif;    
+     color: $primary;
+   }
+   &__subtitle {
+     font-size: 32px;   
+     
+   }
+ 
+   &__text {
+     color:$grey;
+     line-height: 26px;
+     margin: 26px 0 15px 0;
+   }
+ 
+   &__quote {
+     font-size: 22px;
+     margin-bottom: 36px;
+   }
+ 
+   &__btn {
+     margin-top: 75px;
+   }
+ }

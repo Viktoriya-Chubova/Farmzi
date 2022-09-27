@@ -2,7 +2,7 @@
    <div class="footer">
          <container>    
             <div class="footer__row ">
-               <div class="footer__col white">
+               <div class="footer__col ">
                   <h3 class="footer__title">Explore</h3>
                   <ul class="footer__list">
                      <li class="footer__item" v-for="(menu, index) in footerExploreList" :key="index">
@@ -11,7 +11,7 @@
                      </li>
                   </ul>
                </div>
-               <div class="footer__col white">
+               <div class="footer__col ">
                   <h3 class="footer__title">Information</h3>
                   <ul class="footer__list">
                      <li class="footer__item" v-for="(menu, index) in footerInformationList" :key="index">
@@ -20,7 +20,7 @@
                      </li>
                   </ul>
                </div>
-               <div class="footer__col white">
+               <div class="footer__col ">
                   <h3 class="footer__title">Service</h3>
                   <ul class="footer__list">
                      <li class="footer__item" v-for="(menu, index) in footerServiceList" :key="index">
@@ -41,8 +41,7 @@
             </div>          
                    
          </container> 
-
-
+         
       <div class="footer__foot">
             <p> &copy; 2022 design and developed by <a href="#">Brandbes</a>. Powered by <a href="#">Webflow</a>.</p>
          </div> 
@@ -84,5 +83,3 @@ export default {
    }
 };
 </script>
-
-

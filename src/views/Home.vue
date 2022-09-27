@@ -38,6 +38,16 @@
           </div>
       </Container>
     </div>
+    <div class="service">
+      <Container>
+        <div class="service__title">
+          <LineText class="service__lineText">Our Services</LineText> 
+            <Title>Farmzi always provide amazing gardening and landscaping services.</Title>  
+        </div>
+        <CardsServices :data="ServicesData" class="service__cards"></CardsServices>
+        <Button class="service__btn" variant="green">More Service</Button>
+      </Container>
+    </div>
   </div> 
 </template>
 
@@ -48,90 +58,28 @@ import Container from '@/components/Container.vue'
 import Button from '@/components/Button.vue'
 import LineText from '@/components/LineText.vue'
 import Title from '../components/Title.vue';
+import {ServicesData} from '../data/data.services'
+import CardsServices from '../components/CardsServices.vue'
 export default {
   name: 'Home',
   components: {
     Container,
     Button,
     LineText,
-    Title
+    Title,
+    CardsServices
 },
+  data(){
+    return{
+      ServicesData: ServicesData
+    }
+  },
+  
   
 }
 </script>
 
 <style lang="scss" scoped>
   @import "../assets/layouts/index.scss";
-
-  .garden {
-    background-color: $primary;
-    max-height: 788px;
-    
-    
-
-    &__row{      
-      display: flex;
-      
-    }
-    
-    &__title {      
-      font-size: 60px;
-      color: $white;
-      margin: 19px 0 16px 0 ;
-      padding: 0 95px 0 0;  
-       
-    }
-    
-    &__right img{
-      margin-top: -44px;
-    }
-    &__btn{
-      margin-top: 60px;
-    }
-  }
-
-
-
-.about {
-  padding-top: 115px;
-
-  &__title {
-    padding-right: 143px;
-    
-  }
-
-  &__row {
-    display: flex;
-  }
-
-
-  &__right {
-    padding: 73px 0 73px 120px ;
-  }
-  &__subtitle,
-  &__quote{
-    font-family: 'Playfair Display', serif;    
-    color: $primary;
-  }
-  &__subtitle {
-    font-size: 32px;   
-    
-  }
-
-  &__text {
-    color:$grey;
-    line-height: 26px;
-    margin: 26px 0 15px 0;
-  }
-
-  &__quote {
-    font-size: 22px;
-    margin-bottom: 36px;
-  }
-
-  &__btn {
-    margin-top: 75px;
-  }
-}
 
 </style>

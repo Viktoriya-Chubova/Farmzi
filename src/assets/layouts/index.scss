@@ -1,7 +1,10 @@
 
-@import './fonts.scss';
-@import './color.scss';
-@import './footer.scss';
-@import './base.scss';
+@import './fonts';
+@import './color';
+@import './footer';
+@import './base';
 
-
+//pages & components
+@import './garden';
+@import  './about';
+@import './service'
