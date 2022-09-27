@@ -42,10 +42,23 @@
       <Container>
         <div class="service__title">
           <LineText class="service__lineText">Our Services</LineText> 
-            <Title>Farmzi always provide amazing gardening and landscaping services.</Title>  
+          <Title>Farmzi always provide amazing gardening and landscaping services.</Title>  
         </div>
         <CardsServices :data="ServicesData" class="service__cards"></CardsServices>
         <Button class="service__btn" variant="green">More Service</Button>
+      </Container>
+    </div>
+    <div class="call">
+      <Container>
+        <div class="call__row">
+          <div class="call__title">
+            <LineText variant="green">Call To Action</LineText> 
+            <Title variant="white">If you need any gardening service, you can contact with Farmzi.</Title>  
+          </div>
+          <div class="call__contacts">
+            <Contacts class="call__contact"></Contacts>
+          </div>
+        </div>
       </Container>
     </div>
   </div> 
@@ -60,6 +73,7 @@ import LineText from '@/components/LineText.vue'
 import Title from '../components/Title.vue';
 import {ServicesData} from '../data/data.services'
 import CardsServices from '../components/CardsServices.vue'
+import Contacts from '../components/Contacts.vue';
 export default {
   name: 'Home',
   components: {
@@ -67,7 +81,8 @@ export default {
     Button,
     LineText,
     Title,
-    CardsServices
+    CardsServices,
+    Contacts
 },
   data(){
     return{

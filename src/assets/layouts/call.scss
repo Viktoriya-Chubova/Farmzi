@@ -1,0 +1,24 @@
+.call {
+   background-color: $primary;
+   
+   &__row {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__title {
+      max-width: 656px;
+      margin-right: 20px;
+   }
+
+   &__contacts {
+      display: flex;
+      align-items: center;
+      
+      
+   }
+   &__contact {      
+      background-color: $footer;
+      padding: 20px 133px;
+     
+   }
+}
