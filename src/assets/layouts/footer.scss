@@ -6,48 +6,17 @@
       display: flex;
       justify-content: space-between;
    }
+   
 
-   &__col{
-      padding-top: 66px;
-         
+   &__farmzi{
+      background-color:$footer;
+      max-width: 465px;
+      padding: 70px;
       
-      &_farmzi{
-         background-color:$footer;
-         max-width: 465px;
-         padding: 70px;
-      } 
-   }  
+      
+   } 
 
-	&__title {
-      font-family: 'Playfair Display', serif;
-      font-weight: normal;
-      font-size: 30px;
-      margin: 0 0 39px 0;
-      color: $white;
-   }
-
-   &__list {      
-      list-style-type: none;
-      font-size: 15px;        
-      padding: 0;  
-     }
-
-   &__item {      
-      padding: 20px 0;      
-   }
-
-   &__svg{      
-      margin-right: 18px;
-   }
-   &__link {
-      text-decoration: none;
-      color: $white;
-
-      &:hover{
-         color: $text;
-      }
-   }	
-
+	
 
    
 

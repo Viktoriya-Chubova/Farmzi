@@ -7,7 +7,7 @@
       </div>
    </div>
 </template>
-
+ 
 <script>
 
 import LineText from '@/components/LineText.vue'

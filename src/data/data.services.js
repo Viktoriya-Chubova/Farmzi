@@ -5,7 +5,7 @@ export const ServicesData =[
       lineText: 'Flowers',
       title: 'Planting Flower'
    },
-   {
+   { 
       id: 2,
       image: 'Planting',
       lineText: 'Planting',
