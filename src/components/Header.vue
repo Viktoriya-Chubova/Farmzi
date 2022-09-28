@@ -3,7 +3,7 @@
     
       
         <div class="navbar__logo">
-          <img class="navbar__img" src="../assets/images/logo/logo.png" alt="" />
+          <img class="navbar__img" src="../assets/images/logo/logo.svg" alt="" />
         </div>
         <ul class="navbar__list">
           <li class="navbar__item" v-for="(menu, index) in headerMenuList" :key="index">
@@ -48,8 +48,8 @@ data(){
   height: 107px;
   background-color: $primary;
   display: flex;    
-    padding: 29px 60px;
-
+  padding: 29px 60px;
+  justify-content: space-between;
 
 
   &__logo {

@@ -29,9 +29,8 @@ import LineText from '@/components/LineText.vue'
 @import "../assets/layouts/index.scss";
 .cards {
    display: flex;
-   justify-content: space-between;
-   
-
+   justify-content: space-between;  
+   gap: 50px ;
    &__image {
       margin-bottom: 29px;
    }
@@ -46,7 +45,7 @@ import LineText from '@/components/LineText.vue'
       font-size: 15px;
       color: $grey;
       line-height: 26px;
-      max-width: 300px;
+      
    }
 }
 

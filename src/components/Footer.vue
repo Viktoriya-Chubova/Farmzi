@@ -5,7 +5,7 @@
               <FooterNav :data="FooterNavData"></FooterNav>
                <div class="footer__farmzi">
                   <div class="footer__logo">
-                     <img src="../assets/images/logo/logo.png" alt="" />
+                     <img src="../assets/images/logo/logo.svg" alt="" />
                   </div>
                   <div class="footer__text white">
                      <p>Lorem Ipsum is simply dummy text of the printing and typeset industry has been the industry's standard.</p>

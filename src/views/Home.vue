@@ -70,6 +70,30 @@
         <CardsTeam :data="TeamData" class="team__cards"></CardsTeam>
       </container>
     </div>
+    <div class="video">
+      <Container class="video__container">
+        <div class="video__row">
+          <div class="video__title">
+            <LineText variant="green">Company intro video</LineText> 
+            <Title variant="white">See our intro video and lets start your dream project.</Title>  
+          </div>
+          <div class="video__img">
+            <img src="../assets/images/video.jpg" alt="">
+          </div>
+        </div>
+      </Container>
+    </div>
+    <div class="natural">
+      <Container>
+        <div class="natural__row">
+          <img src="../assets/images/natural/natural1.png" alt="">
+          <img src="../assets/images/natural/natural2.png" alt="">
+          <img src="../assets/images/natural/natural3.png" alt="">
+          <img src="../assets/images/natural/natural4.png" alt="">
+          <img src="../assets/images/natural/natural5.png" alt="">
+        </div>
+      </Container>
+    </div>
   </div> 
 </template>
 
@@ -93,7 +117,8 @@ export default {
     Title,
     CardsServices,
     Contacts,
-    CardsTeam
+    CardsTeam,
+    
 },
   data(){
     return{

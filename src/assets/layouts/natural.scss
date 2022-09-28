@@ -1,0 +1,7 @@
+.natural {
+   background-color: $liteGreen;
+   &__row {
+      display: flex;
+      justify-content: space-between;
+   }
+}
