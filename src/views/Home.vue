@@ -62,7 +62,8 @@
       </Container>
     </div>
     <div class="team">
-      <container>
+      <div class="team__rectangle"></div>
+      <container class="team__container">
         <div class="team__title">
           <LineText class="team__lineText">Team Members</LineText> 
           <Title>Farmzi feel proud for skilled team members.</Title>  
@@ -82,6 +83,35 @@
           </div>
         </div>
       </Container>
+    </div>
+    <div class="statistics">
+      <container class="statistics__container">
+        <CardsStatistics :data="StatisticsData" class="statistics__cards"></CardsStatistics>
+      </container>
+    </div>
+    <div class="slider">
+      <container>
+        <SliderProject :data="SliderData" :interval="2000"></SliderProject>
+      </container>
+    </div>
+    <div class="review">
+      <container>
+        <div class="review__title">
+          <LineText>Happy Clients</LineText> 
+          <Title>Farmzi got best feedback from happy clients</Title>  
+        </div>
+        <ReviewClients :data="ReviewData"></ReviewClients>
+        <CardList></CardList>
+      </container>
+    </div>
+    <div class="news">
+      <container>
+        <div class="news__title">
+          <LineText>Latest News</LineText> 
+          <Title>Check now latest tips and tricks of gardening and landscaping from blog.</Title>  
+        </div>
+        <CardsNews :data="NewsData"></CardsNews>
+      </container>
     </div>
     <div class="natural">
       <Container>
@@ -103,11 +133,16 @@
 import Container from '@/components/Container.vue'
 import Button from '@/components/Button.vue'
 import LineText from '@/components/LineText.vue'
-import Title from '../components/Title.vue';
-import {ServicesData, TeamData} from '../data/data.dummy'
-import CardsServices from '../components/CardsServices.vue'
-import Contacts from '../components/Contacts.vue';
-import CardsTeam from '../components/CardsTeam.vue';
+import Title from '@/components/Title.vue';
+import {ServicesData, TeamData,StatisticsData, SliderData, ReviewData, NewsData} from '@/data/data.dummy'
+import CardsServices from '@/components/CardsServices.vue'
+import Contacts from '@/components/Contacts.vue';
+import CardsTeam from '@/components/CardsTeam.vue';
+import CardsStatistics from '@/components/CardsStatistics.vue';
+import SliderProject from '../components/SliderProject.vue';
+import ReviewClients from '../components/ReviewCard.vue';
+import CardsNews from '../components/CardsNews.vue';
+
 export default {
   name: 'Home',
   components: {
@@ -118,13 +153,20 @@ export default {
     CardsServices,
     Contacts,
     CardsTeam,
+    CardsStatistics,
+    SliderProject,
+    ReviewClients,
+    CardsNews,
     
 },
   data(){
     return{
       ServicesData: ServicesData,
-      TeamData: TeamData
-
+      TeamData: TeamData,
+      StatisticsData: StatisticsData,
+      SliderData: SliderData,
+      ReviewData: ReviewData,
+      NewsData:NewsData
     }
   },
   
@@ -134,5 +176,7 @@ export default {
 
 <style lang="scss" scoped>
   @import "../assets/layouts/index.scss";
+
+
 
 </style>

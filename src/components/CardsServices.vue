@@ -21,7 +21,7 @@ import LineText from '@/components/LineText.vue'
     components: { 
       LineText 
    }
-}
+} 
 </script>
 
 <style lang="scss" scoped>

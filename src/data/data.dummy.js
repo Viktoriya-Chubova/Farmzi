@@ -82,3 +82,100 @@ export const TeamData =[
       text: 'There are many variations of passages of Lorem Ipsum available, but the majority'
    }
 ]
+export const StatisticsData =[
+   {
+      id: 1,
+      count: '847 +',
+      lineText: 'Project Done'
+   },
+   {
+      id: 2,
+      count: '753 +',
+      lineText: 'Happy Client'
+   },
+   {
+      id: 3,
+      count: '284 +',
+      lineText: 'Team Member'
+   },
+   {
+      id: 4,
+      count: '98 +',
+      lineText: 'Winning Award'
+   }
+]
+
+export const SliderData = [
+   {
+      id: 1,      
+      image: 'slider1',
+      project: 'Farm Design',
+      client: 'Alex Milan',
+      location: 'Mississippi, USA',
+   },
+   {
+      id: 2,
+      image: 'slider2',
+      project: 'Lawn Design',
+      client: 'Roger Garcia',
+      location: 'Mount Sinai, USA',
+   }
+] 
+
+export const ReviewData =[
+   {
+      id: 1,
+      text: 'Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry s standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book',
+      lineText: 'Founder of Musion',
+      author: 'Shoshana Horsley'
+   },
+   {
+      id: 2,
+      text: 'Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry s standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book',
+      lineText: 'Designer of Musion',
+      author: 'Rachel Patterson'
+   },
+   {
+      id: 3,
+      text: 'Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry s standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book',
+      lineText: 'CEO of Musion',
+      author: 'Jhon Doe'
+   },
+   {
+      id: 4,
+      text: 'Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry s standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book',
+      lineText: 'Founder of Musion',
+      author: 'Shoshana Horsley'
+   },
+   {
+      id: 5,
+      text: 'Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry s standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book',
+      lineText: 'Designer of Musion',
+      author: 'Rachel Patterson'
+   },
+   {
+      id: 6,
+      text: 'Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry s standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book',
+      lineText: 'CEO of Musion',
+      author: 'Jhon Doe'
+   },
+]
+
+export const NewsData = [
+   {
+      id: 1,
+      image: 'new1',
+      date: 'March 23, 2022',
+      author: 'Kristofer Pennell',
+      name: 'If Youre Not Getting Your Garden Harvested Things!',
+      text: 'Lorem Ipsum is simply dummy text the printing and tpesetting industry. Lorem industrys standard dummy.'
+   },
+   {
+      id: 2,
+      image: 'new2',
+      date: 'March 23, 2022',
+      author: 'Kristofer Pennell',
+      name: 'How to Plant Flowers with a Success Rate of 90% or Higher!',
+      text: 'Lorem Ipsum is simply dummy text the printing and tpesetting industry. Lorem industrys standard dummy.'
+   }
+]

@@ -1,6 +1,21 @@
 .team {
+   position: relative;
 
+   &__rectangle{
+      position: absolute;
+      z-index: -1;
+      width: 453px; //изменить
+      height: 850px;
+      background-color: $liteGreen;
+   }
+   &__container{
+      
+     
+   }
    &__title {
+     max-width: 650px;
+     margin-left: auto;
+      margin-right: 0;
       margin-bottom: 50px;
    }
 
