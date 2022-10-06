@@ -42,8 +42,6 @@ import Button from './Button.vue';
    &__info{
       padding: 30px;
    }
-   &__image {
-   }
    &__items{
       display: flex;
       gap: 20px;

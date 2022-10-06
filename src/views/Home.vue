@@ -49,7 +49,7 @@
       </Container>
     </div>
     <div class="call">
-      <Container>
+      <Container class="call__container">
         <div class="call__row">
           <div class="call__title">
             <LineText variant="green">Call To Action</LineText> 
@@ -87,13 +87,10 @@
     <div class="statistics">
       <container class="statistics__container">
         <CardsStatistics :data="StatisticsData" class="statistics__cards"></CardsStatistics>
-      </container>
-    </div>
-    <div class="slider">
-      <container>
         <SliderProject :data="SliderData" :interval="2000"></SliderProject>
       </container>
     </div>
+    
     <div class="review">
       <container>
         <div class="review__title">

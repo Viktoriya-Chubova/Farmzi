@@ -28,7 +28,7 @@ import LineText from './LineText.vue';
    justify-content: space-between;
    
    background-color: $liteGreen;
-   
+   margin-bottom: 100px;
    /* ::after{
          content: '';
          background-color: $primary;

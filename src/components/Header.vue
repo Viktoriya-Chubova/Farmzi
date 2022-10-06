@@ -2,7 +2,7 @@
   <div class="navbar">      
         <div class="navbar__container">
           <div class="navbar__logo">
-            <img class="navbar__img" src="../assets/images/logo/logo.svg" alt="" />
+            <a href="/"><img class="navbar__img" src="../assets/images/logo/logo.svg" alt="" /></a>
           </div>
           <ul class="navbar__list">
             <li class="navbar__item" v-for="(menu, index) in headerMenuList" :key="index">

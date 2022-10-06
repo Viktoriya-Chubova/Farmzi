@@ -1,6 +1,8 @@
 .call {
    background-color: $primary;
-   
+   &__container{
+      padding: 80px 0;
+   }
    &__row {
       display: flex;
       justify-content: space-between;

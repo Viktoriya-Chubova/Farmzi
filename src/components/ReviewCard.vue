@@ -75,6 +75,9 @@
       padding: 60px;
       color: $primary;
       font-family: 'Playfair Display', serif;
+      background-image: url(../assets/quot.png);
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
    }
 
    &__text {
